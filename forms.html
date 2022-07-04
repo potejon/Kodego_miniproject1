@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h3>What is HTML Form</h3><br>
+        <p>HTML Forms are required to collect different kinds of user inputs, such as contact details like name, email address, phone numbers, or details like credit card information, etc.</p>
+        <p>Forms contain special elements called controls like inputbox, checkboxes, radio-buttons, submit buttons, etc. Users generally complete a form by modifying its controls e.g. entering text, selecting items, etc. and submitting this form to a web server for further processing.</p>
+        <p>The &lt;form> tag is used to create an HTML form. Here's a simple example of a login form:</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;form></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">2</td>
+                    <td><span class="token doctype">&lt;label>Username: &lt;input type="text">&lt;/label></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">3</td>
+                    <td><span class="token doctype">&lt;label>Password: &lt;input type="password">&lt;/label></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">4</td>
+                    <td><span class="token doctype">&lt;input type="submit" value="Submit"></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">5</td>
+                    <td><span class="token doctype">&lt;/form></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <h4>Input Element</h4>
+        <p>It allows you to specify various types of user input fields, depending on the type attribute. An input element can be of type text field, password field, checkbox, radio button, submit button, reset button, file select box, as well as several new input types introduced in HTML5.</p><br>
+        <h4>Text Fields</h4>
+        <p>Text fields are one line areas that allow the user to input text. Single-line text input controls are created using an &lt;input> element, whose type attribute has a value of text. Here's an example of a single-line text input used to take username:</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;form></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">2</td>
+                    <td><span class="token doctype">&lt;label for="username">Username:&lt;/label></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">3</td>
+                    <td><span class="token doctype">&lt;input type="text" name="username" id="username"></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">4</td>
+                    <td><span class="token doctype">&lt;/form></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <p>The output of the above example will look something like this:</p>
+        <table class="table table-striped border">
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="token doctype">
+                            <form>
+                                <label for="username">Username:</label>
+                                <input type="text" name="username" id="username">
+                            </form>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div class="color-box space">
+            <div class="shadow">
+                <div class="info-tab"><i></i></div>
+                <div class="tip-box">
+                    <p><strong>Note:</strong> The &lt;label> tag is used to define the labels for &lt;input> elements. If you want your user to enter several lines you should use a &lt;textarea> instead.</p>                
+                </div>
+            </div>
+        </div><br>
+        <h4>Password Field</h4>
+        <p>Password fields are similar to text fields. The only difference is; characters in a password field are masked, i.e. they are shown as asterisks or dots. This is to prevent someone else from reading the password on the screen. This is also a single-line text input controls created using an &lt;input> element whose type attribute has a value of password.</p>
+        <p>Here's an example of a single-line password input used to take user password:</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;form></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">2</td>
+                    <td><span class="token doctype">&lt;label for="user-pwd">Password:&lt;/label></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">3</td>
+                    <td><span class="token doctype">&lt;input type="password" name="user-password" id="user-pwd"></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">4</td>
+                    <td><span class="token doctype">&lt;/form></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <p>The output of the above example will look something like this:</p>
+        <table class="table table-striped border">
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="token doctype">
+                            <form>
+                                <label for="user-pwd">Password:</label>
+                                <input type="password" name="user-password" id="user-pwd">
+                            </form>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <h4>Frequently Used Form Attributes</h4>
+        <p>The following table lists the most frequently used form element's attributes:</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th class="border">Attribute</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">name</td>
+                    <td><span class="token doctype">Specifies the name of the form.</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">action</td>
+                    <td><span class="token doctype">Specifies the URL of the program or script on the web server that will be used for processing the information submitted via form.</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">method</td>
+                    <td><span class="token doctype">Specifies the HTTP method used for sending the data to the web server by the browser. The value can be either get (the default) and post.</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">target</td>
+                    <td><span class="token doctype">	Specifies where to display the response that is received after submitting the form. Possible values are _blank, _self, _parent and _top.</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">enctype</td>
+                    <td><span class="token doctype">Specifies how the form data should be encoded when submitting the form to the server. Applicable only when the value of the method attribute is post.</span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div class="color-box space">
+            <div class="shadow">
+                <div class="info-tab"><i></i></div>
+                <div class="tip-box">
+                    <p><strong>Note:</strong> The name attribute represents the form's name within the forms collection. Its value must be unique among the forms in a document, and must not be an empty string.</p>                
+                </div>
+            </div>
+        </div><br>
+        <div class="color-box space">
+            <div class="shadow">
+                <div class="info-tab"><i></i></div>
+                <div class="tip-box">
+                    <p><strong>Tip:</strong> All the data sent via get method is visible in the browser's address bar. But, the data sent via post is not visible to the user. Please check out the tutorial on GET vs. POST to learn about the difference between these two HTTP methods in detail.</p>                
+                </div>
+            </div>
+        </div><br>
+    </body>
+</html>

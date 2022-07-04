@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h3>What is iframe</h3><br>
+        <p>An iframe or inline frame is used to display external objects including other web pages within a web page. An iframe pretty much acts like a mini web browser within a web browser. Also, the content inside an iframe exists entirely independent from the surrounding elements.</p>
+        <p>The basic syntax for adding an iframe to a web page can be given with:</p>
+        <table class="table table-striped border">
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="token doctype">&lt;iframe src="URL">&lt;/iframe></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <p>The URL specified in the src attribute points to the location of an external object or a web page.</p>
+        <p>The following example display "hello.html" file inside an iframe in current document.</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;iframe src="hello.html">&lt;/iframe></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <h4>Setting Width and Height of an iFrame</h4>
+        <p>The height and width attributes are used to specify the height and width of the iframe.</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;iframe src="hello.html" width="400" height="200">&lt;/iframe></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div class="color-box space">
+            <div class="shadow">
+                <div class="info-tab"><i></i></div>
+                <div class="tip-box">
+                    <p><strong>Note:</strong> The width and height attribute values are specified in pixels by default, but you can also set these values in percentage, such as 50%, 100% and so on. The default width of an iframe is 300 pixels, whereas the default height is 150 pixels.</p>                
+                </div>
+            </div>
+        </div><br>
+        <h4>Removing Default Frameborder</h4>
+        <p>The iframe has a border around it by default. However, if you want to modify or remove the iframe borders, the best way is to use the CSS border property.</p>
+        <p>The following example will simply render the iframe without any borders.</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;iframe src="hello.html" style="border: none;">&lt;/iframe></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <h4>Using an iFrame as Link Target</h4>
+        <p>An iframe can also be used as a target for the hyperlinks. An iframe can be named using the name attribute. This implies that when a link with a target attribute with that name as value is clicked, the linked resource will open in that iframe.</p>
+        <p>Let's try out an example to understand how it basically works:</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;iframe src="demo-page.html" name="myFrame">&lt;/iframe></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">2</td>
+                    <td><span class="token doctype">&lt;p>&lt;a href="https://www.coddict.com" target="myFrame">Open Coddict.com&lt;/a>&lt;/p></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h3>HTML Styles</h3><br>
+        <p>HTML is quite limited when it comes to the presentation of a web page. It was originally designed as a simple way of presenting information. CSS (Cascading Style Sheets) was introduced in December 1996 by the World Wide Web Consortium (W3C) to provide a better way to style HTML elements.</p>
+        <p>With CSS, it becomes very easy to specify the things like, size and typeface for the fonts, colors for the text and backgrounds, alignment of the text and images, amount of space between the elements, border and outlines for the elements, and lots of other styling properties.</p><br>
+        <h4>Adding Styles to HTML Elements</h4>
+        <p>Style information can either be attached as a separate document or embedded in the HTML document itself. These are the three methods of implementing styling information to an HTML document.</p>
+        <ul>
+            <li><b>Inline styles — </b>Using the style attribute in the HTML start tag.</li>
+        </ul>
+        <ul>
+            <li><b>Embedded style — </b>Using the &lt;style&gt; element in the head section of the document.</li>
+        </ul>
+        <ul>
+            <li><b>External style sheet — </b>Using the <link> element, pointing to an external CSS files.</li>
+        </ul>
+        <div class="color-box space">
+            <div class="shadow">
+                <div class="info-tab"><i></i></div>
+                <div class="tip-box">
+                    <p><strong>Note:</strong> The inline styles have the highest priority, and the external style sheets have the lowest. It means if you specify styles for your paragraphs in both embedded and external style sheets, the conflicting style rules in the embedded style sheet would override the external style sheet.</p>                
+                </div>
+            </div>
+        </div><br>
+        <h4>Inline Styles</h4>
+        <p>Inline styles are used to apply the unique style rules to an element, by putting the CSS rules directly into the start tag. It can be attached to an element using the style attribute.</p>
+        <p>The style attribute includes a series of CSS property and value pairs. Each property: value pair is separated by a semicolon (;), just as you would write into an embedded or external style sheet. But it needs to be all in one line i.e. no line break after the semicolon.</p>
+        <p>The following example demonstrates how to set the color and font-size of the text:</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;h1 style="color:red; font-size:30px;">This is a heading&lt;/h1></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">2</td>
+                    <td><span class="token doctype">&lt;p style="color:green; font-size:18px;">This is a paragraph.&lt;/p></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">3</td>
+                    <td><span class="token doctype">&lt;div style="color:green; font-size:18px;">This is some text.&lt;/div>.</span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div class="color-box space">
+            <div class="shadow">
+                <div class="info-tab"><i></i></div>
+                <div class="tip-box">
+                    <p><strong>Note:</strong> It's become impossible to style pseudo-elements and pseudo-classes with inline styles. You should, therefore, avoid the use of style attributes in your markup. Using external style sheet is the preferred way to add style information to an HTML document.</p>                
+                </div>
+            </div>
+        </div><br>
+        <h4>Embedded Style Sheets</h4>
+        <p>Embedded or internal style sheets only affect the document they are embedded in.</p>
+        <p>Embedded style sheets are defined in the &lt;head&gt; section of an HTML document using the &lt;style&gt; tag. You can define any number of &lt;style&gt; elements inside the &lt;head&gt; section.</p>
+        <p>The following example demonstrates how style rules are embedded inside a web page.</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;head&gt;</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">2</td>
+                    <td><span class="token doctype">&lt;style&gt;</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">3</td>
+                    <td><span class="token doctype">body { background-color: YellowGreen; }</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">4</td>
+                    <td><span class="token doctype">h1 { color: blue; }</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">5</td>
+                    <td><span class="token doctype">p { color: red; }</span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">6</td>
+                    <td><span class="token doctype">&lt;/style></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">7</td>
+                    <td><span class="token doctype">&lt;/head></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <h4>External Style Sheets</h4>
+        <p>An external style sheet holds all the style rules in a separate document that you can link from any HTML document on your site. External style sheets are the most flexible because with an external style sheet, you can change the look of an entire website by updating just one file.</p>
+        <p>You can attach external style sheets in two ways — <i>linking</i> and <i>importing</i>:</p><br>
+        <h4>Linking External Style Sheets</h4>
+        <p>An external style sheet can be linked to an HTML document using the &lt;link&gt; tag.</p>
+        <p>The &lt;link&gt; tag goes inside the &lt;head&gt; section, as shown here:</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-sm-1 border">1</td>
+                    <td><span class="token doctype">&lt;head></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">2</td>
+                    <td><span class="token doctype">&lt;link rel="stylesheet" href="css/style.css"></span></td>
+                </tr>
+                <tr>
+                    <td class="col-sm-1 border">3</td>
+                    <td><span class="token doctype">&lt;/head></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+    </body>
+</html>
